@@ -1,9 +1,20 @@
-function isPalindrome(word) {
-  // Write your algorithm here
+function isPalindrome(orgWord) {
+  let newString = "";
+  for (let i = orgWord.length; i > -1; i--){
+    let newLetter = orgWord.charAt(i);
+    newString = newString.concat(newLetter);
+  };
+  return (orgWord === newString);
 }
+
+
 
 /* 
   Add your pseudocode here
+  Write function
+  take in a word
+  if word is palindrome it will return true, 
+  else return false
 */
 
 /*
